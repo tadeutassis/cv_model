@@ -1,0 +1,244 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=60pt]{geometry}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage[svgnames]{xcolor}
+\usepackage[colorlinks=true, allcolors=Indigo]{hyperref}
+\usepackage{textgreek}
+
+\renewcommand\familydefault{\sfdefault} 
+\usepackage{setspace} % sets line spacing
+\onehalfspacing
+\frenchspacing % no extra space after periods
+\pagestyle{empty} % no page numbers
+\setlength{\parindent}{0pt} % no indent in new paragraphs
+
+\newcommand{\linesep}{\vspace*{1em}}
+
+\newcommand{\MyTitle}[1]{
+    {\fontfamily{cmbr} \fontsize{36}{48} \selectfont \color{Indigo} #1} \par
+    \vspace*{1em}
+}
+
+\newcommand{\MySection}[1]{
+    \vspace*{2em}
+    {\fontfamily{cmbr} \large \color{Indigo} \uppercase{#1} \hrulefill} \par
+    \vspace*{1em}
+}
+
+\newcommand{\MySubSec}[1]{
+    \vspace*{0.25em}
+    {\fontfamily{cmbr} \color{Indigo} \selectfont #1} \par
+    \vspace*{0.25em}
+}
+
+\newcommand{\InfoItem}[2]{
+    \textbf{#1}: #2 \par
+}
+
+\newcommand{\EduItem}[6]{
+    \textbf{#1}, #2, #3 \hfill \textbf{#4} \par
+    {\small Thesis: #5 \par
+    Supervisor: #6} \par
+}
+
+\newcommand{\PubItem}[3]{
+    \textbf{#1} \par
+    {\small #2 \par
+    #3} \par
+}
+
+\newcommand{\GrantItem}[2]{
+    \textbf{#1}: #2 \par
+}
+
+\newcommand{\EventItem}[5]{
+    \textbf{#1}, #2, #3 (#4) \par
+    {\small #5} \par
+}
+
+\newcommand{\ActivItem}[3]{
+    {\small
+    \quad \textbf{#1}, #2 \par
+    \quad #3} \par
+}
+
+\newcommand{\SkillItem}[2]{
+    {\small
+    \quad \textbf{#1}, #2 \par
+    }
+}
+
+\begin{document}
+
+\MyTitle{Tadeu Tassis}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\MySection{Personal information}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\InfoItem{Citizenship}{Brazilian}
+\InfoItem{Webpage}{\url{https://tadeutassis.github.io}}
+\InfoItem{Contact}{tadeutassis@gmail.com}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\MySection{Education}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\EduItem{PhD in Physics}
+{Federal University of ABC (UFABC)}
+{Brazil}
+{2019--Present}
+{Trapped ions beyond low intensity regimes}
+{Prof. Fernando L. Semião}
+
+\linesep
+
+\EduItem{MSc in Physics}
+{Federal University of Espírito Santo (UFES)}
+{Brazil}
+{2017--2019}
+{Topological solitons in scalar field theories in (1+1)-dimensions}
+{Prof. Gabriel Luchini}
+
+\linesep
+
+\EduItem{BSc in Physics}
+{UFES}
+{Brazil}
+{2013--2017}
+{The Fermi-Pasta-Ulam-Tsigou problem (in Portuguese)}
+{Prof. Gabriel Luchini}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\MySection{Publication list}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\PubItem{Trapped ions beyond carrier and sideband interactions}
+{T. Tassis and F. L. Semião}
+{Physical Review A 107, 042605 (2023)}
+
+\linesep
+
+\PubItem{Collective coordinates for the hybrid model}
+{C. F. S. Pereira, E. S. Costa Filho, and T. Tassis}
+{International Journal of Modern Physics A 38, 2350006 (2023)}
+
+\linesep
+
+\PubItem{Some novel considerations about the collective coordinates approximation for the scattering of \textphi \textsuperscript{4} kinks}
+{C. F. S. Pereira, G. Luchini, T. Tassis, and C. P. Constantinidis}
+{Journal of Physics A: Mathematical and Theoretical 54, 075701 (2021)}
+
+\linesep
+
+\PubItem{BPS states for scalar field theories based on g\textsubscript{2} and su(4) algebras}
+{G. Luchini and T. Tassis}
+{Journal of High Energy Physics 2020, 11 (2020)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\MySection{Fellowships}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\GrantItem{2021--Present}{PhD Scholarship CAPES}
+
+\GrantItem{2019--2021}{PhD Scholarship from UFABC}
+
+\GrantItem{2017--2019}{MSc Scholarship from CAPES}
+
+\GrantItem{2016--2016}{Undergrad Research Scholarship from UFES}
+
+\GrantItem{2015--2016}{Undergrad Research Scholarship from UFES}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\MySection{Events}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\EventItem{XLI Paulo Leal Ferreira Physics Conference}
+{IFT-Unesp}
+{Brazil}
+{2018}
+{\quad Poster: \emph{Scattering of an electron by a Dirac monopole}}
+
+\linesep
+
+\EventItem{II School on Theoretical High Energy Physics}
+{IFSC-USP}
+{Brazil}
+{2018}
+
+\linesep
+
+\EventItem{School on Theoretical High Energy Physics}
+{IFSC-USP}
+{Brazil}
+{2016}
+
+\linesep
+
+\EventItem{Short Course on: Solitons in Classical Field Theories}
+{IFSC-USP}
+{Brazil}
+{2016}
+
+\linesep
+
+\EventItem{XXVI Winter Physics School}
+{UFMG}
+{Brazil}
+{2015}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\MySection{Activities}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\MySubSec{Teaching assistant}
+
+\ActivItem{Classical mechanics II}
+{UFABC, Brazil (2022)}
+{Lecturer: Prof. Fernando L. Semião}
+
+\ActivItem{Thermal phenomena}
+{UFABC, Brazil (2021)}
+{Lecturer: Prof. Roberto M. Serra}
+
+\linesep
+
+\MySubSec{Examining commitees}
+
+\ActivItem{BSc thesis defence of João Vitor Bastos Del Piero}
+{UFES, Brazil (2019)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\MySection{Skills}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\linewidth}
+    \MySubSec{Languages}
+
+    \SkillItem{Portuguese}{native}
+
+    \SkillItem{English}{advanced}
+
+    \SkillItem{Spanish}{basic}
+\end{minipage}
+\begin{minipage}[t]{0.66\linewidth}
+    \MySubSec{Programming Languages}
+
+    \SkillItem{Python}
+    {experience with NumPy, SciPy, Matplotlib, and QuTiP}
+
+    \SkillItem{Julia}
+    {experience with QuantumOptics.jl}
+
+    \SkillItem{C/C++}
+    {experience implementing basic numerical methods (e.g., RK4)}
+
+    \MySubSec{Software}
+
+    \quad {\small \textbf{Linux}}
+
+    \quad {\small \textbf{\LaTeX}}
+\end{minipage}
+\end{document}
