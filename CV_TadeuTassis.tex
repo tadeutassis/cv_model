@@ -1,13 +1,19 @@
 \documentclass[11pt]{article}
-\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Lato}
+\setsansfont{Josefin Sans}
+\usepackage{amsmath,amsfonts,amsthm,physics}
 \usepackage[a4paper, margin=60pt]{geometry}
-\usepackage{amsmath,amsfonts,amsthm}
 \usepackage{graphicx}
 \usepackage[svgnames]{xcolor}
 \usepackage[colorlinks=true, allcolors=Indigo]{hyperref}
-\usepackage{textgreek}
 
-\renewcommand\familydefault{\sfdefault} 
+\renewcommand{\Huge}{\fontsize{40}{48}\selectfont}
+\renewcommand{\Large}{\fontsize{14}{16}\selectfont}
+\renewcommand{\large}{\fontsize{12}{14}\selectfont}
+
+\usepackage[letterspace=-50]{microtype} % lets you change charater spacing for more aesthetic title
 \usepackage{setspace} % sets line spacing
 \onehalfspacing
 \frenchspacing % no extra space after periods
@@ -17,19 +23,19 @@
 \newcommand{\linesep}{\vspace*{1em}}
 
 \newcommand{\MyTitle}[1]{
-    {\fontfamily{cmbr} \fontsize{36}{48} \selectfont \color{Indigo} #1} \par
+    {\color{Indigo} \Huge \lsstyle \textsf{#1}} \par
     \vspace*{1em}
 }
 
 \newcommand{\MySection}[1]{
     \vspace*{2em}
-    {\fontfamily{cmbr} \large \color{Indigo} \uppercase{#1} \hrulefill} \par
+    {\color{Indigo} \Large \textsf{\uppercase{#1}} \hrulefill} \par
     \vspace*{1em}
 }
 
 \newcommand{\MySubSec}[1]{
     \vspace*{0.25em}
-    {\fontfamily{cmbr} \color{Indigo} \selectfont #1} \par
+    {\color{Indigo} \large \textsf{#1}} \par
     \vspace*{0.25em}
 }
 
@@ -72,15 +78,15 @@
 
 \begin{document}
 
-\MyTitle{Tadeu Tassis}
+\MyTitle{Tadeu \hspace{-15pt} Tassis}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \MySection{Personal information}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \InfoItem{Citizenship}{Brazilian}
-\InfoItem{Webpage}{\url{https://tadeutassis.github.io}}
-\InfoItem{Contact}{tadeutassis@gmail.com}
+\InfoItem{Webpage}{\href{https://tadeutassis.github.io}{tadeutassis.github.io}}
+\InfoItem{Contact}{\href{mailto:tadeutassis@gmail.com}{tadeutassis@gmail.com}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \MySection{Education}
@@ -127,7 +133,7 @@
 
 \linesep
 
-\PubItem{Some novel considerations about the collective coordinates approximation for the scattering of \textphi \textsuperscript{4} kinks}
+\PubItem{Some novel considerations about the collective coordinates approximation for the scattering of φ\textsuperscript{4} kinks}
 {C. F. S. Pereira, G. Luchini, T. Tassis, and C. P. Constantinidis}
 {Journal of Physics A: Mathematical and Theoretical 54, 075701 (2021)}
 
